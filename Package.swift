@@ -41,7 +41,8 @@ let package = Package(
                 "CocoaLumberjack",
                 "CocoaLumberjackSwiftSupport"
             ],
-            exclude: ["Supporting Files"]),
+            exclude: ["Supporting Files"],
+            publicHeadersPath: "include/CocoaLumberjack"),
         .target(
             name: "CocoaLumberjackSwiftLogBackend",
             dependencies: [
